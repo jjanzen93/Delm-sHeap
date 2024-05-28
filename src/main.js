@@ -22,7 +22,14 @@ let config = {
     width: 1000,
     height: 800,
     scene: [Game],
-    fps: { forceSetTimeOut: true, target: 30 }
+    fps: { forceSetTimeOut: true, target: 30 },
+    physics: {
+        default: 'arcade',
+        arcade : {
+            debug: false,
+            gravity: { y: 0 }
+        }
+    }
 }
 
 // Global variable to hold sprites
